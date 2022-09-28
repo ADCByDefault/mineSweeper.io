@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="dark" />
+		<title>campoMinato</title>
+		<link rel="shortcut icon" href="img/Skarmy.webp" type="image/x-icon" />
+		<link rel="stylesheet" href="style/style.css" />
+		<script src="script/script.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<p>Dimensione campo 7-20</p>
+			<input type="number" id="boardSize" min="7" max="20" />
+		</div>
+		<div class="container">
+			<p>Numero mine 5-15</p>
+			<input type="number" id="mineCount" min="5" max="15" />
+		</div>
+		<button id="vai">Vai!</button>
+		<div id="error">Inserici numeri validi</div>
+		<div id="board"></div>
+	</body>
+</html>

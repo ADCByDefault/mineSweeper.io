@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.container {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.container p {
+    margin: 0 auto .5rem;
+}
+
+input {
+    color: black;
+    background-color: violet;
+    font-size: .9rem;
+    padding: .5rem 1.5rem;
+    border: 3px solid black;
+    border-radius: 2rem;
+    width: 200px;
+    transition: all .25s;
+}
+
+input:focus-visible {
+    transform: scale(1.03) skew(0, 10deg);
+    outline: none;
+}
+
+button {
+    color: black;
+    background-color: violet;
+    margin: 2rem auto;
+    padding: .5rem;
+    border: 3px solid black;
+    border-radius: 2rem;
+    width: 200px;
+    transition: all .25s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.2) skew(15deg, -10deg);
+}
+
+#error {
+    display: none;
+    background-color: red;
+    padding: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cella {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 46px;
+    border: 2px solid black;
+    background-color: grey;
+    width: 50px;
+    aspect-ratio: 1;
+    cursor: default;
+}
+
+.cella[data-nearmines="1"] {
+    color: rgb(0, 126, 126);
+}
+
+.cella[data-nearmines="2"] {
+    color: rgb(0, 65, 0);
+}
+
+.cella[data-nearmines="3"] {
+    color: rgb(13, 118, 13);
+}
+
+.cella[data-nearmines="4"] {
+    color: gold;
+}
+
+.cella[data-nearmines="5"] {
+    color: darkorange;
+}
+
+.cella[data-nearmines="6"] {
+    color: firebrick;
+}
+
+.cella[data-nearmines="7"] {
+    color: purple;
+}
+
+.cella[data-nearmines="8"] {
+    color: darkblue;
+}
+
+.visibile {
+    background-color: rgb(185, 185, 185);
+}
+
+.visibile.mine {
+    background-color: rgb(233, 33, 33);
+}
+
+.visibile.mine:hover {
+    cursor: no-drop;
+}
+
+.nascosto:hover {
+    cursor: help;
+}
